@@ -1,0 +1,67 @@
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px  20px 0px 50px;
+    width: 100%;
+    &__right{
+        margin-left: 19.7vw;
+        &__ul{
+            display: flex;
+
+            li{
+                list-style-type: none;
+                margin-left: 20px;
+                color:#10385B;
+                font-size: 16px;
+            }
+        }
+        &__hamburger{
+            display: none;
+        }
+        
+    }
+}
+
+//mobile view
+
+@include mobile{
+
+    .nav2{
+        padding: 5px;
+        
+        &__right{
+            &__ul{
+              
+                li{
+                   display: none;
+                }
+            }
+            &__hamburger{
+                display: flex;
+            }
+            
+        }
+    }
+    
+
+}
+
+//tablet
+
+@include tablet{
+    .nav2{
+        padding: 10px  20px 0px 50px;
+        &__right{
+        margin-left: 0px;
+            &__ul{
+                display: none;
+            }
+            &__hamburger{
+                display: flex;
+                margin-left: 400px;
+            }
+            
+        }
+    }
+
+}

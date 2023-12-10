@@ -1,0 +1,42 @@
+.sec-4{
+    width: 100%;
+    background-color: rgb(213, 238, 230);
+    height: 47vh;
+    display: flex;
+    
+    h4:after{
+        position: absolute;
+        content: "";
+        height: 1px;
+        background-color: black;
+        width: 30vw;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+    &__left{
+        
+        &__text{
+            font-size: 20px;
+            margin-bottom: 20px;
+            letter-spacing: 4px;
+        }
+    }
+   
+}
+
+//mobile
+@include mobile{
+    .sec-4{
+        height:800px ;
+        h4:after{
+           display: none;
+        }
+    }
+}
+
+//tablet
+@include tablet{
+    .sec-4{
+        height: 650px;
+    }
+}

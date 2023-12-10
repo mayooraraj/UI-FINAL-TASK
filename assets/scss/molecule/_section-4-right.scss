@@ -1,0 +1,63 @@
+.sec-4__right{
+    margin-left: 73vw;
+    margin-top: 70px;
+    &__slanted-container{
+        position: absolute;
+        width: 150px;
+        height: 80px;
+        overflow: hidden;
+    }
+    &__slanted-div{
+        width: 100%;
+        height: 100%;
+        background-color: aquamarine;
+        transform: skewX(38deg);
+        transform-origin: bottom right;
+        margin-bottom: -50px; 
+    }
+    &__box{
+        width: 300px;
+        height: 160px;
+        background-color:aquamarine;
+        position: absolute;
+        margin-top: 10px;
+        text-align: center;
+        h5{
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: $fifty;
+        }
+        button{
+            margin-top: 20px;
+        }
+    }
+    &__arrowImg{
+     width: 65px;
+    height: 65px;
+    margin-left: 150px;
+    }
+}
+
+//mobile
+@include mobile{
+    .sec-4__right{
+        margin-left: 40px;
+        margin-top: 570px;
+        &__box{
+            button{    
+                display: flex;
+            }
+        }
+
+    }
+    
+    
+}
+
+//tablet
+@include tablet{
+    .sec-4__right{
+        margin-left: 70vw;
+        margin-top: 390px;
+    }
+}

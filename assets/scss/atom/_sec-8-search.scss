@@ -1,0 +1,72 @@
+.sec-8__left__body{
+    &__search1{
+        width: 350px;
+        height: 35px;
+        padding: 0px 10px;
+        border: 1px solid #D9D9D9;
+        color: #666;
+
+        font-family: $poppins;
+        font-size: 14px;
+        font-weight: 400;
+        background-image: url('../images/Path 261.png');
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        border-radius: 4px;
+        margin-bottom: 20px;
+
+        &--srch2{
+            background-image: url('../images/Path 276.png');
+        }
+        &--srch3{
+            background-image: url('../images/Path 279.png');
+        }
+        &--srch5{
+            background-image: url('../images/Path 274.png');
+        }
+        &--srch5{
+            background-image: url('../images/Path 281.png');
+        }
+        &--msgsearch{
+            width: 720px;
+            height: 68px;
+            margin-left: 50px;
+            background-image: url('../images/Path 267.png');
+        }
+        }
+   
+    }
+
+    //mobile
+
+    @include mobile{
+        .sec-8__left__body{
+           
+            &__search1
+            {
+                width: 350px;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 0px;
+                margin-bottom: 15px;
+                &--msgsearch{
+                    width: 350px;
+                    height: 73px;
+                    margin-left: 10px;
+                }
+         }
+    }
+}
+
+//tablet
+@include tablet{
+    .sec-8__left__body{
+    &__search1{
+        width: 400px;
+    
+    &--msgsearch{
+        width: 820px;
+    }
+}
+}
+}

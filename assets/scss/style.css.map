@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACA,gBAAgB,EAAE,GAAG;EACrB,KAAK,EAAE,KAAK",
+"sources": ["atom/_nav.scss"],
+"names": [],
+"file": "style.css"
+}
